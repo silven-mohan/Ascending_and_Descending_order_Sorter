@@ -1,5 +1,5 @@
 Run Result:
- 
+
    Ascending & Descending Sorter
 _________________________________
 | A. Ascending Order 		|
