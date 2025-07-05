@@ -41,7 +41,7 @@ After Sorting:
 ----
 
 ## 📃License
-  See included [LICENSE.md](./LICENSE.md) file for more details.
+  See included [LICENSE.md](./LICENSE) file for more details.
 
 ----
 
