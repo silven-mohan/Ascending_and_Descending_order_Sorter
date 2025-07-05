@@ -66,8 +66,8 @@ jobs:
 
     - name: Run the Sorter
       run: |
-        echo -e "Run Result:\n" > Result.txt
-        ./ADO < Input_Values.txt >> Result.txt
+        echo -e "Run Result:\n" > Test-Run-Result/Result.txt
+        ./ADO < Input_Values.txt >> Test-Run-Result/Result.txt
 
     # Push Result.txt to Repo
     
