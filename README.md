@@ -1,5 +1,9 @@
 # Ascending_and_Descending_order_Sorter
 
+![CI](https://github.com/silven-mohan/Ascending_and_Descending_order_Sorter/actions/workflows/.github/workflows/main.yml/badge.svg)
+
+-----
+
 📄 Ascending & Descending Order Sorter
 🎯 Overview
 This C program allows the user to sort a list of integers in ascending order, descending order, or both. It provides a simple menu-driven interface so the user can choose the desired sorting mode and view the results immediately.
