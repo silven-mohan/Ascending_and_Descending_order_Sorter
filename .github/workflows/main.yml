@@ -1,0 +1,89 @@
+name: C Build and Run
+
+on:
+  push:
+    paths:
+      - '**/*.c'
+      - '**/*.yml'
+    branches:
+      - main
+    tags-ignore:
+      - '**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Install GCC(Compilation)
+      run: sudo apt-get install -y build-essential
+
+    # Compilation
+    
+    - name: Compile the C file
+      run: gcc Ascending_Descending_Order.c -o ADO
+
+    # Input Values
+
+    - name: Input Values for Asc to run the code
+      run: |
+        cat <<EOF > Input_Values.txt
+        A
+        5
+        20
+        10
+        30
+        50
+        40
+        Y
+        B
+        5
+        20
+        10
+        30
+        50
+        40
+        Y
+        C
+        5
+        20
+        10
+        30
+        50
+        40
+        N
+        EOF
+
+    # Run The Program
+
+    - name: Run the Sorter
+      run: |
+        echo -e "Run Result:\n" > Result.txt
+        ./ADO < Input_Values.txt >> Result.txt
+
+    # Push Result.txt to Repo
+    
+    - name: Upload Result.txt
+      uses: actions/upload-artifact@v4
+      with:
+        name: Test-Run-Result
+        path: Test-Run-Result/Result.txt
+    - name: Push Result.txt to repo
+      env:
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+          git add Test-Run-Result/Result.txt
+          git commit -m "Update Reslut " [skip ci] || echo "No changes to commit"
+          git push
+        
