@@ -158,9 +158,7 @@ void both()
 	}
 }
 
-
-
-void main()
+int main()
 {
 	char ch, choice;
 	do
@@ -200,5 +198,7 @@ void main()
 		printf("\n\n\t\tDo you want to continue?(Y/N)");
 		scanf(" %c", &choice);
 	}while(choice=='Y'||choice=='y');
+
+	return 0;
 }
 
