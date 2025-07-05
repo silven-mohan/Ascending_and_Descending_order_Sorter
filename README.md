@@ -38,5 +38,14 @@ After Sorting:
                 10 20 30 40 50
 ```
 
+----
+
+## 📃License
+  See included [LICENSE.md](./LICENSE.md) file for more details.
+
+----
+
 ## Author: Silven Mohan
+
+----
 
