@@ -1,1 +1,47 @@
+Run Result:
 
+   Ascending & Descending Sorter
+_________________________________
+| A. Ascending Order 		|
+| B. Descending Order 		|
+| C. Both 			|
+---------------------------------
+How many numbers you want to enter:Enter the numbers:
+Ascending Order:
+	Before Sorting:
+		20  10  30  50  40  
+	After Sorting:
+		10  20  30  40  50  
+
+		Do you want to continue?(Y/N)   Ascending & Descending Sorter
+_________________________________
+| A. Ascending Order 		|
+| B. Descending Order 		|
+| C. Both 			|
+---------------------------------
+How many numbers you want to enter:Enter the numbers:
+Descending Order:
+	Before Sorting:
+		20  10  30  50  40  
+	After Sorting:
+		50  40  30  20  10  
+
+		Do you want to continue?(Y/N)   Ascending & Descending Sorter
+_________________________________
+| A. Ascending Order 		|
+| B. Descending Order 		|
+| C. Both 			|
+---------------------------------
+How many numbers you want to enter:Enter the numbers:
+Ascending Order:
+	Before Sorting:
+		20  10  30  50  40  
+	After Sorting:
+		10  20  30  40  50  
+Descending Order:
+	Before Sorting:
+		10  20  30  40  50  
+	After Sorting:
+		50  40  30  20  10  
+
+		Do you want to continue?(Y/N)
