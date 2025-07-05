@@ -2,7 +2,7 @@
  
 #include<stdio.h>
 #include<stdlib.h>
-
+ 
 /* Ascending Order **/
 void asc_order()
 {
