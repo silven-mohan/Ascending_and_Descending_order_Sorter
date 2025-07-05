@@ -7,16 +7,16 @@
 void asc_order()
 {
 	int i, j, n, a[100], t;
-	system("cls");
+	/*system("cls");*/
 	printf("How many numbers you want to enter:");
 	scanf("%d", &n);
-	system("cls");
+	/*system("cls");*/
 	printf("Enter the numbers:\n");
 	for(i=0;i<n;i++)
 	{
 		scanf("%d", &a[i]);
 	}
-	system("cls");
+	/*system("cls");*/
 	printf("Ascending Order:");
 	printf("\n\tBefore Sorting:\n\t\t");
 	for(i=0;i<n;i++)
@@ -50,16 +50,16 @@ void asc_order()
 void desc_order()
 {
 	int i, j, n, a[100], t;
-	system("cls");
+	/*system("cls");*/
 	printf("How many numbers you want to enter:");
 	scanf("%d", &n);
-	system("cls");
+	/*system("cls");*/
 	printf("Enter the numbers:\n");
 	for(i=0;i<n;i++)
 	{
 		scanf("%d", &a[i]);
 	}
-	system("cls");
+	// system("cls");
 	printf("Descending Order:");
 	printf("\n\tBefore Sorting:\n\t\t");
 	for(i=0;i<n;i++)
@@ -92,16 +92,16 @@ void desc_order()
 void both()
 {
 	int i, j, n, a[100], t;
-	system("cls");
+	// system("cls");
 	printf("How many numbers you want to enter:");
 	scanf("%d", &n);
-	system("cls");
+	// system("cls");
 	printf("Enter the numbers:\n");
 	for(i=0;i<n;i++)
 	{
 		scanf("%d", &a[i]);
 	}
-	system("cls");
+	// system("cls");
 	printf("Ascending Order:");
 	printf("\n\tBefore Sorting:\n\t\t");
 	for(i=0;i<n;i++)
@@ -163,7 +163,7 @@ int main()
 	char ch, choice;
 	do
 	{
-		system("cls");
+		// system("cls");
 		printf("   Ascending & Descending Sorter");
 		printf("\n_________________________________");
 		printf("\n| A. Ascending Order \t\t|");
@@ -171,7 +171,7 @@ int main()
 		printf("\n| C. Both \t\t\t|");
 		printf("\n---------------------------------\n");
 		scanf(" %c", &ch);
-		system("cls");
+		// system("cls");
 		switch(ch)
 		{
 			case 'A':
